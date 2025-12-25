@@ -12,7 +12,9 @@ This will extract a folder named `relion_benchmark`.
 ## Step 2: Build the Docker Image
 Build the docker image with `Dockerfile`, run:
 ```zsh
-sudo docker build -t relion_nru .
+cd build_docker/
+docker build -t relion_nru .
+cd ..
 ```
 Verify the image was built:
 ```zsh
