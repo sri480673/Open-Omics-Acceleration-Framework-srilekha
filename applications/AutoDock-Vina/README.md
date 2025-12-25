@@ -8,7 +8,9 @@ Open-Omics-Autodock-Vina is a fast, efficient molecular docking software used to
 To build the Docker image with the tag `docker_vina`, use the following commands based on your machine's proxy requirements:
 * For machine without a proxy:
 ```bash
-docker build -t docker_vina .
+cd build_docker/
+sudo docker build -t docker_vina:latest --build-arg FLAVOR=all .
+cd ..
 ```
 * For machine with a proxy:
 ```bash
