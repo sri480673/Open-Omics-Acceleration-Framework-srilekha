@@ -248,10 +248,10 @@ aws batch create-compute-environment \
     "maxvCpus":256,
     "instanceTypes":["c7i.8xlarge"],
     "subnets":[
-      "subnet-0cc85b462f56588f8",
-      "subnet-03091d3d44b447382"
+      "subnet-<SUBNET-ID>",
+      "subnet-<SUBNET-ID>"
     ],
-    "securityGroupIds":["sg-0ef47e9ad1b4f9271"],
+    "securityGroupIds":["<SID>"],
     "instanceRole":"ecsInstanceRole"
   }'
 ```
@@ -396,10 +396,10 @@ aws batch create-compute-environment \
     "maxvCpus":256,
     "instanceTypes":["c7i.8xlarge"],
     "subnets":[
-      "subnet-0cc85b462f56588f8",
-      "subnet-03091d3d44b447382"
+      "subnet-<SUBNET-ID>",
+      "subnet-<SUBNET-ID>"
     ],
-    "securityGroupIds":["sg-0ef47e9ad1b4f9271"],
+    "securityGroupIds":["<SID>"],
     "instanceRole":"ecsInstanceRole",
     "launchTemplate":{
       "launchTemplateName":"relion-ecs-200g",
